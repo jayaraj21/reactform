@@ -1,38 +1,158 @@
-.App {
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color:white;
+
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.container{
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 700px;
+  background-color:#EDEDED;
+  border-radius: 40px 0px;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+/* Header */
+
+h1 {
+  margin: 0;
+  background-color: #787878;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 30px ;
   color: white;
+  font-size: 28px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    padding: 12px 70px;
+  margin: 0px;
+  text-align: justify;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register, .form-box {
+  width: 50%;
+  
+}
+
+
+.form-box{
+   height: 100%;
+   width: 480px;
+   align-content: flex-start;
+}
+
+.form-group{
+  margin-left: 60px ;
+  width: 50%;
+  background-color: #EDEDED;
+  padding: 10px;
+  background-color: #4E5C4D;
+ 
+  
+}
+
+.form{
+  background-color:#4E5C4D ;
+  padding: 3%;
+  
+  
+}
+.form-field{
+  width: 250px;
+  border-color: white;
+  border-radius: 15px;
+  height: 30px;
+
+}
+
+
+
+h2{
+    color: white;
+}
+
+.register-btn{
+  background-color: rgb(26,26,26);
+  display: block;
+  width: 100px;
+  display: block;
+
+color: white;
+
+padding: 8px;
+margin-top: 5%;
+margin-left: 100px;
+width: 50%;
+border: none;
+border-radius: 30px;
+font-size: 20px;
+
+}
+
+.register-btn:disabled {
+
+  background-color: rgb(26,26,26);
+  cursor: not-allowed;
+}
+
+
+label{
+  color: white;
+  text-align: center;
+}
+
+.error-msg{
+    font-size: 14px;
+    position: absolute;
+    display: block;
+    color:#ff2d08 ;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  height: 6%;
+  width: 100%;
+  background-color:#787878;
+  color: white;
+  text-justify: auto;
+  
+ 
+}
+
+.footer h3 {
+  
+  margin-top: 5px;
+ 
+}
+
+.navbar{
+  position: absolute;
+  bottom: 62px;
+  left:25%;
+  width: 50%;
+
 }
